@@ -10,7 +10,7 @@ export class EmployeeComponent {
 employeeid=""
 password=""
 constructor(private route:Router){}
-readvalues=()=>{
+readValues=()=>{
   let data:any={"employeeid":this.employeeid,"password":this.password}
   console.log(data)
   if (this.employeeid=="1122" && this.password=="12345") {
