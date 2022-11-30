@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +15,62 @@ import { FormsModule } from '@angular/forms';
 import { AddfriendComponent } from './addfriend/addfriend.component';
 import { ViewcourseComponent } from './viewcourse/viewcourse.component';
 import { ViewfriendComponent } from './viewfriend/viewfriend.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NavbaradminComponent } from './navbaradmin/navbaradmin.component';
+import { NavbaremployeeComponent } from './navbaremployee/navbaremployee.component';
+const myRoute:Routes=[
+  {
+    path:"",
+    component:HomeComponent
+    
 
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
+  },
+  {
+    path:"about",
+    component:AboutComponent
+  },
+  {
+     path:"contact",
+     component:ContactComponent
+  },{
+    path:"admin",
+    component:AdminComponent
+  },{
+    path:"employee",
+    component:EmployeeComponent
+  },
+  {
+    path:"reg",
+    component:EmpregComponent
+  },{
+    path:"addc",
+    component:AddcourseComponent
+  },
+  {
+    path:"addf",
+    component:AddfriendComponent
+  },{
+    path:"viewc",
+    component:ViewcourseComponent
+  },
+  {
+    path:"viewf",
+    component:ViewfriendComponent
+  },
+  {
+    path:"navadmin",
+    component:NavbaradminComponent
+  },
+  {
+    path:"navemployee",
+    component:NavbaremployeeComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,12 +84,16 @@ import { ViewfriendComponent } from './viewfriend/viewfriend.component';
     AddcourseComponent,
     AddfriendComponent,
     ViewcourseComponent,
-    ViewfriendComponent
+    ViewfriendComponent,
+    NavbarComponent,
+    NavbaradminComponent,
+    NavbaremployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
