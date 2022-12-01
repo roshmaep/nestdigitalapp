@@ -8,8 +8,11 @@ import { ApiService } from '../api.service';
 })
 export class ViewfriendComponent {
   constructor(private api:ApiService){
-    api.fetchfriend().subscribe((response)=>{this.data=response;})
+    api.fetchfriend().subscribe((response)=>{
+      this.loading=false
+      this.data=response;})
   }
   data:any=[]
+  loading:boolean=true
   
 }
