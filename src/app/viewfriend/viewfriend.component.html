@@ -4,18 +4,58 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
                 <h3 class="text-center"></h3>
-                <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of data">
-                <div class="card" style="width: 30rem;">
-                    <img height="300px" width="300px" src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Name:{{i.name}}</h5>
-                      <h6 class="card-title">Friends's Name:{{i.friendName}}
-                       Friends's Nickname:{{i.friendNickName}}
-                      </h6>
-                      <p class="card-text">Describe Your Friend:{{i.DescribeYourFriend}}</p>
+                <ng-container *ngIf="loading; then loadingScreen; else dataScreen"></ng-container>
+                <ng-template #loadingScreen>
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
                       </div>
-                  </div>
-              </div>
+                      <div class="spinner-grow text-secondary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-info" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-dark" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                </ng-template>
+                <ng-template #dataScreen>
+                    <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 g-3 mt-3 " *ngFor="let i of data">
+
+                        <div class="card" style="width: 30rem;">
+
+                            <div class="card-body">
+
+                              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHsAuQMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAADBAIGAQUHAP/EADgQAAICAQIEBAMGBQMFAAAAAAECAAMEBREGEiExE0FRYSJxgRQykaGx0QcjUsHwFUJyJDNiguH/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAIhEAAgICAgICAwAAAAAAAAAAAAECAxExBCESURNBBSJh/9oADAMBAAIRAxEAPwCh1LHKkgqljlSzFm4StI1WkhWsarWSWiVa9IdVmEWGVYhoyqwqrPKsIokjMBZILJASW0AI8s9yyc8BACPKJjk3k9ppOJtRuxKRTigi1huzA7FR7QSyJvBtyvtIleu3nOdvqN1OWFU2t162BmLE+nSbeniHKxGBvXxKfME7nb5zTw9E+aLUVkGWZxMqnMx0vofmRvyPoZNxMyxR1i7rHXWLuseQELUitqTY2LFLV7xiZq7lgeWOXLA8svJBOpY5UsXqEdqG0TANWsaQQNYjKCSUEQQyLIJDqImUZEIokVEIBEBmZAmBJiAHp7aenogNXrupf6dRWtS82Re3h1L6seg/MiX/AIc4Sw8HTCuo1rl5uQu+TbYN+pHVR6ATlmqZa5HFWm0oj2/ZLvFC19WZkBsI6/8AEfjOg6bx0lHj164l9LId0c4rbbdO7Lup+8OvTvNUuskfYbiDgvQ7dPdKMOumwAlHUdjtOJajjXY1FtbBQ2PaQCvmN/SdkyONcfI3AoArbfw3Nyrz/INtvOT8X5lN2pXnG+EXDrt6+v5Qi3kqcV4/0hoGrjDzlCt/09oU2D5+Y+W8vh6zjmPYQ/Lvs2/T26zpPC+oPmYXh2tzPVsAfUddv0hNEQZtmEBYsZMC46TM0E7BFbVjziK3CUJmtuEFtGbhA7RkGahHKhFqo5VAaD1iMJA1xhBJKQVIZYJYURDCCTEiskO8AJLJCYElEB6YmZ6AGt4Lx0t/iLkhyQa8ax0IAJDbqD39iZb+LMrEx8ezT7rycjLXl+NQNkHpsAD16++3sJRcPUK9I42xcuwlashzRa39Ib4d/wAQsv8AreLqYKtQou5W+GzICMqj16bNKk+iq0m+xDiPQtLyNNoXVMLYUDdDQ68vX3Ox67Tjmq4dFeTZ9kB8IFVBHXc7nfb850PjrWb/AA0xBkKzlQHZOg3lCqcN43M4FdDNsf6iFA6/MkyoNsVqSNBcgS7n2HKew/eWbhWy2vOTw2XwrF3Kjsf2ldyH8RksYACwkkL2Ee0rMdLFsQhXQ83Tpvt3HSaS0YR2dMME/nM47F6UYgjdQdiesw8wNhewRW0d43ZFbJSARuEDyxi6BjMz1UcqidXaOVQGhlIdO8AkOsRSDr2hBBLCLJGFWSEgsnEARTMyCyYgB6enpla2tPhoCWboAO8AKLxhQ32hbt+jJ69t99v895eMOviJuD8ezOyrVyXG4DfeFfKOXm9/3mx4e4YGRqq3a5TWik+GlFjfEwA6bD0J3PvtLTmafbVZk9Vsre4uoJ6qpVen4gzWcJKOjOFkXPZwrUaMhMpWyurc4+8SfrK/fZtWw3+/8RHrOi8fYb0Z9vwfAyAqw8h0B2/EznVi/wDW4vwfA5A2Pp1Bjr0OzfQgvMwPKCQo3Pt5x3AQVXo+45B3+sHYv2INVvzFujdOx7H9TMUORuSdx6fT/wCTR6M0dJ0nNrtxKkZ18QALsB3+kbeafhi9TiGvn3YHf32m2ecz2boDZF7Iw5i1hlIQpbBbQtpgYyWYqMbrMSrMbrMAQ3WYZTF0PSHSIpDCmFUwCmEUyRhgZIGDEmpiAIDJAknpIKZHJy3w8dmrrR2chd2/2+e/+fnNaKnbYoezK+34q3P0MDkVDZe4rQdyYGzXVx/h0yvkft4z9W+n+CaZFytSyUVFtyLj0VVG/wCXlLpoX8P7rAturWeEnc0od2PzPlPaVHF4qzLtnz8uRyeS8LX8NDp2deL7bvELXja1WY7nmU9P1MvORryWaevK38zl+Mee+0q/FOm0aPxHTXjJy4ttClV3369Vb+x+srOTS1mTXRgi23nJRqKzyg2Dbfnf/auxB9SDsOxk8lKajNfZfGcq5SgwfEzZuoamiPebi5TwlG/LWh9ffod5SxScrJCV77VPuCD1B6/jOk6rw+dO4ftta43Z7vubAPhLEbcqjyA3lY4L0Y52qX71s2PQd7AD94+g9N9u/pvOGcO8HpV25hllfq0vLzMmysAC0HlIfsep8/p3il2LbgZYxcpGUg7ev4fvOuZ+g1V0k1nwnDMxNZ2ABO/KPb3nP+JCXpUseZxfyhj3I/zaEq8IIX+UsDPDrfzEQgqUHRgfvg9djLOx7yocNWNdfV8R+AHr7eUthJI3nG9netA7DFrO0O5i1p6QBitpgeaEtMBvGQerMbrMRrMbrMGA5WekOhitZh0MRaGVMKpMXUwymIYYGTEEDJKYgCqZvuH+H6dcrsOVYy0ow+FB1b6+U1um6dbnMxU8lafefbf8pseOs7N0DT8JNEu+zUWryu6qC7Dv3Pb6es6uLRKyax0cnLthGDT7La1mg8KYfxPj4SbdySXf6feae4f4jw9frvtwPF8Om3wyXG3N0BBA9P2nBLbrMi1rr7HstbqzuxZj9TLz/CTL8PVc7DJ6XUixR/5If2b8p693AVVLlnLPMq5blYopYRZf4oY5OHg5q7hq7TU3yYb/AKr+crXDgV9SyCAP59S2Hb+pT1/JiJfuMcf7bwrnqi7tXX4qj3Xr/YznXDF3Je5B6isr9CR/n1mVT8uPj0yeRHxvT9j3E2JVm5Vao9qEKQQlpAJA9N9o3wzi06Zo2NjYqeLkWLzv7sep3Pt0H0irEZGq1Y4OxYHr6Tc5FlGl4ICLuqgIqDvYfITJocZNpr6NVr2S4vTCXbxOQ2XFevKvkN/ecn12/dKVDAFrCevlOiaslmn6Pl5mYR9tzD1A8t/L5Cct1/cW0V9TsCd/QdJla+jo46/bJueG7KxlMRsDYu+3pLUx285z/SXdLk8Pl2UfrLtXZ8PKRswHUTgZ6sdE3MVtaFsMWsMQMXtaC3mbTBc0ZJisxqtpr62jdbRiHkaMI0SraHRoikOq0KrRVGhlMkoYVpstLwDlnnsJSgHYkdyfQTV1FOceI3Kn+4jyEPqvFuJp1VJor3QqwQg9A3QDf8TN6KlLuWkc3JulBeMNsumHXXQgoxU7ddgfzO8V44x2zeFVTlPj47EgAb7jv+gEU0XOanCqexw1tg57CD5ny+k3Caum3XaC5jhYnFdIFwPKv9n2zjO4BI3G46bbzd8EZv2HirTrubZGt8J/k/w/qQfpOi35mm2spycbFcE7E2Vqf1jmNj6ExS6vT8FXB3DChBsfUdJ6r/Lwsg4uOziX4qcJJqWixqqsltNm3IwK9fScT5LdLysiqxXrFDMCSCOYI3f5bCdce9HGwbf3BlW1XJ1HFyGr/wBUwbMSzcGrIXksVT6MNwfwE4quT8aksdM6reD8zXeGjR8Mc+ZqF+fYPgReRB13m/tqzXs8V2qpVeiIU5mAgeH8HGrwrPDUmqy4sjBt/Y9vLcGPZtlePUWL7Kg3JZuwm/l5LKOCVbg3FlL41LM+PTY/MX67+wlF1HBycnLVsel22XuU3U7n1lj1bMfUNTuuO/U8lanyHkI4qhK1QDYKNpzXywsHZxYfZqtP0PGwwrElrehZh0BPymwbYMT6yTNAO84zuI2NFbW6QljRSxoxMFa0FzT1rQPNKRJGto3W019ZjVZgwH63jCNEU7RhDJGOo8MrxRYZTEWNBtxtFb9OxLwQ6kb99j3+naFWTEak1oTins9p9NmAScfMv5fJH2ZR+U3Wl/6xqxcF8PHrUlQ7KWJ+g/eahSdplMm6m/aqxlG/lIffZpD0F4j0jjXCdn0xcTUMcdVegEWD/wBSf03lew+K9dwL+XW8O+hCfifwWqK++x6GdC0HMyHYq1rEb9jLSgF1YW1VcHyZQZULI6lEc4T2pFJ03iMZFS2Y+bRajee+3X394K3JXI1JbtUrwqNx/Ke2hn5vkDsJc2xseqxvCx6U/wCNYEr+Oxtx87JsPNeNQsqFh7hFOyqPQD0nVChSWTju5nxvxwbWuqypd6nVunRR8Kj6TQ8VZ7LjtT8K7gFz5+wm8DEVuAe1hA+W5/YSh8Vu/Ix5juxO/Xv1nXo83Pk8s1enfzb/ABD5Esf7TZM81+kf9lj57j9I288+55kenQsQMO8WseTcxeyZmzZCx4rY/eEsMWsjRIKx4LnnrIPeUSf/2Q==" class="card-img-top" alt="...">-->
+
+                               
+
+                              <h5 class="card-text">Name:{{i.name}}</h5>
+
+                              <h6 class="card-text">Friend Name:{{i.friendName}}</h6>
+
+                              <h6 class="card-text">Friend NickName:{{i.friendNickName}}</h6>
+
+                              <p class="card-text">Describe Your Friend:{{i.DescribeYourFriend}}</p>
+
+                              </div>
+
+                          </div>
+
+                    </div>
+                </ng-template>
             </div>
         </div>
     </div>
